@@ -12,6 +12,39 @@
   margin-right: auto;
   margin-left: auto;
 }
+.logo-text {
+	font-family: 'Game of Squids', sans-serif;
+	/* position: absolute;  */
+	width: 90%; height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 5%;
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #b9cae6;
+	font-size: 250px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: #d58a36; }
+	80%  {fill: rgba(72,138,20,0); stroke: #d58b36bb; stroke-width: 3; }
+	100% {
+		fill: #dce9f5; stroke: rgba(54,95,160,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
 
 .logo.mobile {
   display: none;
@@ -224,8 +257,8 @@
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  font-family: Alterradisplay, sans-serif;
-  color: #fff8df;
+  font-family: 'Game of Squids', sans-serif;
+  color: #ffc054;
   font-size: 1.5vw;
   line-height: 1.5vw;
   text-transform: uppercase;
@@ -258,7 +291,7 @@
 }
 
 .neuebit {
-  font-family: Ppneuebit, sans-serif;
+  font-family: 'Game of Squids', sans-serif;
   color: #fff8df;
   font-size: 3vw;
   font-weight: 400;
